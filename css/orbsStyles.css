@@ -1,0 +1,108 @@
+/* Orbs Web Page CSS */
+
+html {
+    background-color: black;
+}
+
+#collapsebtn {
+    visibility: hidden;
+}
+
+/* Side Navigation Bar */
+
+.sidenav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: yellow;
+    transition: 0.3s
+}
+
+.stripedNav {
+    background-color: #777700;
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: white;
+    opacity: .7;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Social Media list */
+
+.socialList {
+    overflow: auto;
+}
+
+.socialList li {
+    list-style: none;
+    float: left;
+}
+
+.socialList li a i {
+    background: #205D7A;
+    color: #fff;
+    width: 40px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 5px;
+    padding-top: 15%;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialList li a i:hover {
+    opacity: .7;
+}
+
+.socialList .fa-facebook {
+    background: #3b5998;
+}
+
+.socialList .fa-twitter {
+    background: #00aced;
+}
+
+.socialList .fa-youtube {
+    background: #ff4b39;
+}
+
+.socialList .fa-twitch {
+    background: #6441A5;
+}
+
+/* Main body container */
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    margin-left: 20%;
+    width: 80%;
+    height: 100%;
+    color: yellow;
+}
+
+/* Change navbar setting depending on screen size */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

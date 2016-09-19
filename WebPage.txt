@@ -1,0 +1,24 @@
+Web Page Concept:
+Areas: Background (BG), Video (V), Panel (P), Front (F)
+The Page is divided into 4 areas, BG, V, P and the F.
+### Details about the Areas:
+### BG: The BG should just be a black universe with a few stars, nothing that catches much attention but it should nicely round up the edge of the page.
+
+### V: The V automatically plays a looping video, which has to assignable through the web site's source code. The Video must be placed behind a mask in a shape of an orb. The video must keep aspect ratio. Video has to play smoothly. The V must not pause, so it is required to load while the user can browse the web page. As soon as the video download finishes, it starts playing.
+
+### P: The P is located on the left and right side of the page. There are vertically aligned images/buttons on them. There should be enough space to have like 10 buttons on each of them. The panel itself should not scroll. The P is always visible in front of the BG and in front of the video.
+(Optional): The Images/Buttons on the panels must be able to display tool tips, that open up next to them
+(Optional): Panels slide in when the mouse is near the edge of the page.
+
+### F: The F is a scrollable area in the center of the page. Only about 50% of the page width should scroll down. Anything can be placed inside this area. There must be a possibility to embed Buttons/Links, Videos, Screenshots or text. It holds a few elements like important big buttons, a trailer, and other key elements and eye catchers like screenshots.
+
+### Other requirements:
+The BG and the V are always visible and stay in place.
+There is a special Orbs font that needs to be used on the page. It has to be included.
+These are the only colors that can be used: Black, White and all tones of yellow.
+Users can not add anything on the page, it is completely read only. No user management, no database connection, no backend communication required.
+The whole page will be hosted on a web server, no external hosting required.
+The whole web application must perform smoothly. Scrolling needs to be smooth. The F is flexible and is the one that reacts in terms of responsive design. The P do not have to be as large as shown on the image mockup.
+You may credit yourself in a fixed bar at the bottom of the page, so that it is always visible. The bar must not exceed height of 64 pixel. You can add anything you like to that bar. The background of that bar must be black and must use the orbs font to display text.
+(Optional) Hovering and clicking on buttons must play predefined sound effects.
+(Optional) Hovering over clickable elements must make them glow.
