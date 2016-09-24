@@ -16,12 +16,16 @@
     height: 30px;
     font-size: 25px;
     text-align: center;
-    margin-right: 5px;
+    margin: auto;
     padding-top: 15%;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
-.socialList li a i:hover {
+.socialList li a:hover {
     opacity: .7;
 }
 
