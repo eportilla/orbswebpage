@@ -1,85 +1,62 @@
-/* Left Nav Bar */
+/* Nav Bar */
 
-#collapseLeftbtn {
-    visibility: hidden;
-}
-
-.sidenav-left {
+.sidenav {
     height: 100%;
-    width: 20%;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: all 0.5s ease-in-out;
     padding-top: 100px;
 }
 
-.sidenav-left a {
-    padding: 5px 5px 5px 5px;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
+.sidenav-left {
+    left: 0;
+}
+
+.sidenav-right {
+    right: 0;
+}
+
+.menu-buttons {
+    width: 20%;
+}
+
+.collapse-btn {
+    width: 0;
     color: yellow;
-    transition: 0.3s
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-buttons a {
+    padding: 5px 5px 5px 5px;
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    color: yellow;
 }
 
 .stripedNav {
     background-color: #777700;
 }
 
-.sidenav-left a:hover, .offcanvas a:focus{
+.sidenav-left a:hover, .collapse-btn #collapseLeftbtn:hover, .sidenav-right a:hover, .collapse-btn #collapseRightbtn:hover {
     color: white;
     opacity: .7;
 }
 
-.sidenav-left .closebtn {
+.sidenav-left .closebtn, .collapse-btn #collapseLeftbtn, .sidenav-right .closebtn, .collapse-btn #collapseRightbtn {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 10px;
     font-size: 36px;
+    cursor:pointer;
 }
 
-/* Right Nav Bar */
-
-#collapseRightbtn {
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 16px;
+.sidenav-left .closebtn, .collapse-btn #collapseLeftbtn {
+    left: 5px;
 }
 
-.sidenav-right {
-    height: 100%;
-    width: 20%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 1;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 100px;
-}
-
-.sidenav-right a {
-    padding: 5px 5px 5px 5px;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-    color: yellow;
-    transition: 0.3s
-}
-
-.sidenav-right a:hover, .offcanvas a:focus{
-    color: white;
-    opacity: .7;
-}
-
-.sidenav-right .closebtn {
-    position: absolute;
-    top: 0;
-    right: 0;
-    font-size: 36px;
+.sidenav-right .closebtn, .collapse-btn #collapseRightbtn {
+    right: 5px;
 }

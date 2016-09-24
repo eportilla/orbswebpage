@@ -23,9 +23,8 @@ html {
     padding: 16px;
     margin-left: 20%;
     margin-right: 20%;
-    top: 40%;
+    top: 45%;
     width: 60%;
-    height: 70%;
     color: yellow;
 }
 
@@ -33,13 +32,11 @@ html {
     position: fixed;
     top: 0;
     padding: 0;
-    /*height: 30%;*/
     width:60%;
     max-width: 640px;
     margin: 0 auto;
     left: 20%;
     right: 20%;
-    color: yellow;
     z-index: 1;
 }
 

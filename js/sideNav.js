@@ -1,23 +1,19 @@
 function openLeftnav() {
     document.getElementById("sideNavleft").style.width = "20%";
-    document.getElementById("main").style.marginLeft = "20%";
-    document.getElementById("collapseLeftbtn").style.visibility = "hidden";
+    document.getElementById("open-left-menu").style.width = "0";
 }
 
 function closeLeftnav() {
     document.getElementById("sideNavleft").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("collapseLeftbtn").style.visibility = "visible";
+    document.getElementById("open-left-menu").style.width = "20%";
 }
 
 function openRightnav() {
     document.getElementById("sideNavright").style.width = "20%";
-    document.getElementById("main").style.marginRight = "20%";
-    document.getElementById("collapseRightbtn").style.visibility = "hidden";
+    document.getElementById("open-right-menu").style.width = "0";
 }
 
 function closeRightnav() {
     document.getElementById("sideNavright").style.width = "0";
-    document.getElementById("main").style.marginRight= "0";
-    document.getElementById("collapseRightbtn").style.visibility = "visible";
+    document.getElementById("open-right-menu").style.width = "20%";
 }
