@@ -1,0 +1,85 @@
+/* Left Nav Bar */
+
+#collapseLeftbtn {
+    visibility: hidden;
+}
+
+.sidenav-left {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidenav-left a {
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: yellow;
+    transition: 0.3s
+}
+
+.stripedNav {
+    background-color: #777700;
+}
+
+.sidenav-left a:hover, .offcanvas a:focus{
+    color: white;
+    opacity: .7;
+}
+
+.sidenav-left .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+}
+
+/* Right Nav Bar */
+
+#collapseRightbtn {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px;
+}
+
+.sidenav-right {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 100px;
+}
+
+.sidenav-right a {
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    color: yellow;
+    transition: 0.3s
+}
+
+.sidenav-right a:hover, .offcanvas a:focus{
+    color: white;
+    opacity: .7;
+}
+
+.sidenav-right .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 36px;
+}

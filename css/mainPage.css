@@ -1,0 +1,66 @@
+/* Orbs Web Page CSS */
+
+@font-face {
+    font-family: "Orbitron-Bold";
+    src: url("../fonts/Orbitron-Bold.ttf"),
+    url("../fonts/Orbitron-Bold.eot"); /* IE */
+}
+
+html {
+    background: black url("../img/backImage.png") no-repeat center center fixed;
+    /* browser support */
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Orbitron-Bold;
+}
+
+/* Main body container */
+.main {
+    position: absolute;
+    transition: all .5s;
+    padding: 16px;
+    margin-left: 20%;
+    margin-right: 20%;
+    top: 40%;
+    width: 60%;
+    height: 70%;
+    color: yellow;
+}
+
+.videoPanel {
+    position: fixed;
+    top: 0;
+    padding: 0;
+    /*height: 30%;*/
+    width:60%;
+    max-width: 640px;
+    margin: 0 auto;
+    left: 20%;
+    right: 20%;
+    color: yellow;
+    z-index: 1;
+}
+
+.wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    overflow: hidden;
+}
+
+.wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Change navbar setting depending on screen size */
+@media screen and (max-height: 450px) {
+  .sidenav-left {padding-top: 15px;}
+  .sidenav-left a {font-size: 18px;}
+}

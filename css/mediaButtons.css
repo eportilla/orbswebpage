@@ -1,0 +1,42 @@
+/* Social Media list */
+
+.socialList {
+    overflow: auto;
+}
+
+.socialList li {
+    list-style: none;
+    float: left;
+}
+
+.socialList li a i {
+    background: #205D7A;
+    color: #fff;
+    width: 40px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    margin-right: 5px;
+    padding-top: 15%;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialList li a i:hover {
+    opacity: .7;
+}
+
+.socialList .fa-facebook {
+    background: #3b5998;
+}
+
+.socialList .fa-twitter {
+    background: #00aced;
+}
+
+.socialList .fa-youtube {
+    background: #ff4b39;
+}
+
+.socialList .fa-twitch {
+    background: #6441A5;
+}
