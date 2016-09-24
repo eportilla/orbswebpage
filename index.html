@@ -20,21 +20,38 @@
 </head>
 
 <body>
+
+	<!-- Sound clips for the buttons -->
+	<audio id="sound_confirm" preload="auto">
+		<source src="audio/Confirm.wav" type="audio/wav">
+	</audio>
+
+	<audio id="sound_hover" preload="auto">
+		<source src="audio/ButtonHover.wav" type="audio/wav">
+	</audio>
+
+
 	<div id="open-left-menu" class="sidenav sidenav-left collapse-btn">
-		<a href="javascript:void(0)" id="collapseLeftbtn" onclick="openLeftnav()">&#9776;</a>
+		<a href="javascript:void(0)" id="collapseLeftbtn" onclick="getElementById('sound_confirm').play();openLeftnav();" onmouseover="getElementById('sound_hover').play();">&#9776;</a>
 	</div>
 
 	<div id="sideNavleft" class="sidenav sidenav-left menu-buttons">
 		<!-- Close Navigation bar button -->
-		<a href="javascript:void(0)" class="closebtn" onclick="closeLeftnav()">&times;</a>
+		<a href="javascript:void(0)" class="closebtn" onclick="getElementById('sound_confirm').play();closeLeftnav();" onmouseover="getElementById('sound_hover').play();">&times;</a>
 
-		<a class="stripedNav" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe">DOWNLOAD</a>
-		<a href="https://orbs.itch.io/orbs/purchase">PURCHASE GAME KEY</a>
-		<a class="stripedNav" href="howtoplay.html" target="_blank">HOW TO PLAY</a>
-		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank">VIEW LEADERBOARD</a>
-		<a class="stripedNav" href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank">VIEW CORE DESTRUCTION HISTORY</a>
-		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank">DISCUSS ORBS</a>
-		<a class="stripedNav" href="mailto:orbs@i-show-you.de">EMAIL DEVELOPER</a>
+		<a class="stripedNav" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DOWNLOAD</a>
+
+		<a href="https://orbs.itch.io/orbs/purchase" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">PURCHASE GAME KEY</a>
+
+		<a class="stripedNav" href="howtoplay.html" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">HOW TO PLAY</a>
+
+		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW LEADERBOARD</a>
+
+		<a class="stripedNav" href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW CORE DESTRUCTION HISTORY</a>
+
+		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DISCUSS ORBS</a>
+
+		<a class="stripedNav" href="mailto:orbs@i-show-you.de" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">EMAIL DEVELOPER</a>
 		
 	</div>
 
@@ -64,12 +81,12 @@
 	</div>
 
 	<div id="open-right-menu" class="sidenav sidenav-right collapse-btn">
-		<a href="javascript:void(0)" id="collapseRightbtn" onclick="openRightnav()">&#9776;</a>
+		<a href="javascript:void(0)" id="collapseRightbtn" onclick="getElementById('sound_confirm').play();openRightnav();" onmouseover="getElementById('sound_hover').play();">&#9776;</a>
 	</div>
 
 	<div id="sideNavright" class="sidenav sidenav-right menu-buttons">
 		<!-- Close Navigation bar button -->
-		<a href="javascript:void(0)" id="close-right-btn" class="closebtn" onclick="closeRightnav()">&times;</a>
+		<a href="javascript:void(0)" id="close-right-btn" class="closebtn" onclick="getElementById('sound_confirm').play();closeRightnav();" onmouseover="getElementById('sound_hover').play();">&times;</a>
 
 		<!-- Social Media -->
 		<ul class="socialList">
