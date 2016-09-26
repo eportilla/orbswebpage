@@ -16,7 +16,7 @@ html {
     font-family: Orbitron-Bold;
 }
 
-/* Main body container */
+/* scrollable container */
 .main {
     position: absolute;
     transition: all .5s;
@@ -26,26 +26,34 @@ html {
     top: 45%;
     width: 60%;
     color: yellow;
+    background-color: rgba(0,0,0,0.7); /* rgb & opacity */
 }
 
 .videoPanel {
     position: fixed;
     top: 0;
     padding: 0;
-    width:60%;
-    max-width: 640px; /* Remove this to make vid larger */
-    margin: 0 auto;
+    width: 60%;
+    /*max-width: 640px; /* Remove this to make vid larger */
+    margin: auto;
     left: 20%;
     right: 20%;
-    z-index: -1;
 }
 
 .wrapper {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     padding-top: 25px;
+    margin: auto;
     height: 0;
-    overflow: hidden;
+    width:60%;
+    overflow: hidden;    
+    border: 5px solid gold;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    border-radius: 60%;
+    box-shadow: 0 0 30px 20px gold;
+    z-index: 1;
 }
 
 .wrapper iframe {

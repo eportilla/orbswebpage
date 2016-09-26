@@ -57,7 +57,10 @@
 
 	<div class="videoPanel">
 		<div class="wrapper">
-			<iframe width="640" height="360" src="https://www.youtube.com/embed/z8brMKMvGc4?autoplay=0&loop=1&playlist=z8brMKMvGc4&rel=0&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+			<!-- Added loop=1&playlist=[Youtube vid ID] to loop the video
+					 enablejsapi=1 to use the youtube iframe api to mute the video
+			-->
+			<iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/z8brMKMvGc4?wmode=transparent&autoplay=1&loop=1&playlist=z8brMKMvGc4&rel=0&controls=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 
