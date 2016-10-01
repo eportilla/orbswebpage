@@ -5,7 +5,7 @@
 <head>
 	<meta name="description" content="Orbs Massively Multiplayer Online Role Playing Game">
 	<meta name="keywords" content="Orbs,MMORPG,MMOG,MMO,Game,Play,ISU,I-SHOW-YOU">
-	<meta name="Author" content="BlueScreen">
+	<meta name="Author" content="E. Portilla">
 
 	<!-- Style for the page -->
 	<link rel="stylesheet" type="text/css" href="css/mainPage.css">
@@ -20,6 +20,12 @@
 </head>
 
 <body>
+
+	<video poster="../img/backImage.png" id="bgvid" playsinline autoplay muted loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+		<!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
+		<source src="http://www.i-show-you.de/downloads/videos/Orbs%20Trailer.mp4" type="video/mp4">
+	</video>
 
 	<!-- Sound clips for the buttons -->
 	<audio id="sound_confirm" preload="auto">
@@ -55,14 +61,14 @@
 		
 	</div>
 
-	<div class="videoPanel">
+	<!--<div class="videoPanel">
 		<div class="wrapper">
 			<!-- Added loop=1&playlist=[Youtube vid ID] to loop the video
 					 enablejsapi=1 to use the youtube iframe api to mute the video
-			-->
+			--
 			<iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/z8brMKMvGc4?wmode=transparent&autoplay=1&loop=1&playlist=z8brMKMvGc4&rel=0&controls=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 		</div>
-	</div>
+	</div>-->
 
 	<div id="main" class="main">
 
