@@ -21,7 +21,7 @@
 
 <body>
 
-	<video poster="../img/backImage.png" id="bgvid" playsinline autoplay muted loop>
+	<video poster="img/backImage.png" id="bgvid" playsinline autoplay muted loop>
   <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
 		<!--<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">-->
 		<source src="http://www.i-show-you.de/downloads/videos/Orbs%20Trailer.mp4" type="video/mp4">
@@ -45,19 +45,23 @@
 		<!-- Close Navigation bar button -->
 		<a href="javascript:void(0)" class="closebtn" onclick="getElementById('sound_confirm').play();closeLeftnav();" onmouseover="getElementById('sound_hover').play();">&times;</a>
 
-		<a class="stripedNav" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DOWNLOAD</a>
+		<ul>
 
-		<a href="https://orbs.itch.io/orbs/purchase" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">PURCHASE GAME KEY</a>
+			<li><a class="stripedNav" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DOWNLOAD</a></li>
 
-		<a class="stripedNav" href="howtoplay.html" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">HOW TO PLAY</a>
+			<li><a href="https://orbs.itch.io/orbs/purchase" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">PURCHASE GAME KEY</a></li>
 
-		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW LEADERBOARD</a>
+			<li><a class="stripedNav" href="howtoplay.html" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">HOW TO PLAY</a></li>
 
-		<a class="stripedNav" href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW CORE DESTRUCTION HISTORY</a>
+			<li><a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW LEADERBOARD</a></li>
 
-		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DISCUSS ORBS</a>
+			<li><a class="stripedNav" href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW CORE DESTRUCTION HISTORY</a></li>
 
-		<a class="stripedNav" href="mailto:orbs@i-show-you.de" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">EMAIL DEVELOPER</a>
+			<li><a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DISCUSS ORBS</a></li>
+
+			<li><a class="stripedNav" href="mailto:orbs@i-show-you.de" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">EMAIL DEVELOPER</a></li>
+
+		</ul>
 		
 	</div>
 

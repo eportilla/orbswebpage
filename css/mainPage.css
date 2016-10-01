@@ -6,15 +6,15 @@
     url("../fonts/Orbitron-Bold.eot"); /* IE */
 }
 
-/*html {
+html {
     background: black url("../img/backImage.png") no-repeat center center fixed;
-    /* browser support *
+    /* browser support */
     -webkit-background-size: cover;
     -moz-background-size: cover; 
     -o-background-size: cover;
     background-size: cover;
     font-family: Orbitron-Bold;
-}*/
+}
 
 video { 
     position: fixed;
@@ -28,7 +28,7 @@ video {
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background: black url('../img/backImage.png') no-repeat center center fixed;
+    background: black url("../img/backImage.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -95,10 +95,10 @@ video {
 
 @media screen and (max-width: 768px) { 
   /*div{width:70%;} */
-  html { background: black url('../img/backImage.png') no-repeat center center fixed; }
+  html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
 }
 @media screen and (max-device-width: 768px) {
-  html { background: black url('../img/backImage.png') no-repeat center center fixed; }
+  html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
 }

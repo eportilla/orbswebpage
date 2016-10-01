@@ -44,6 +44,10 @@
     transition: all 0.2s ease-in-out;
 }
 
+.menu-buttons li {
+    list-style: none;
+}
+
 .menu-buttons a {
     padding: 5px 5px 5px 5px;
     font-size: 18px;
