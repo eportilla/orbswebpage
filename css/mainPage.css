@@ -1,4 +1,4 @@
-/* Orbs Web Page CSS */
+/* Background & Content CSS */
 
 @font-face {
     font-family: "Orbitron-Bold";
@@ -87,14 +87,7 @@ video {
     height: 100%;
 }*/
 
-/* Change navbar setting depending on screen size */
-@media screen and (max-height: 450px) {
-  .sidenav-left {padding-top: 15px;}
-  .menu-buttons a {font-size: 14px;}
-}
-
 @media screen and (max-width: 768px) { 
-  /*div{width:70%;} */
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
 }

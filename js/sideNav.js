@@ -1,21 +1,33 @@
+// Get the viewport window width this is used to set the width of the nav bars
+function getWindowWidth() {
+  var windWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+
+  var width = "20%";
+  if (windWidth <= 768) {
+    width = "50%";
+  }
+
+  return width;
+}
+
 function openLeftnav() {
 	document.getElementById("open-left-menu").style.width = "0";
-	document.getElementById("sideNavleft").style.width = "20%";
+	document.getElementById("sideNavleft").style.width = getWindowWidth();
 }
 
 function closeLeftnav() {
 	document.getElementById("sideNavleft").style.width = "0";
-  document.getElementById("open-left-menu").style.width = "20%";
+  document.getElementById("open-left-menu").style.width = getWindowWidth();
 }
 
 function openRightnav() {
 	document.getElementById("open-right-menu").style.width = "0";
-  document.getElementById("sideNavright").style.width = "20%";
+  document.getElementById("sideNavright").style.width = getWindowWidth();
 }
 
 function closeRightnav() {
   document.getElementById("sideNavright").style.width = "0";
-  document.getElementById("open-right-menu").style.width = "20%";
+  document.getElementById("open-right-menu").style.width = getWindowWidth();
 }
 
 //Create a script element
