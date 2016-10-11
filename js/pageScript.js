@@ -42,9 +42,9 @@ function getWindowWidth() {
   var windWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 
   var width = "20%";
-  if (windWidth <= 768) {
+  /*if (windWidth <= 768) {
     width = "50%";
-  }
+  }*/
 
   return width;
 }
