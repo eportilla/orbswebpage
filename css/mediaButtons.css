@@ -1,23 +1,20 @@
 /* Social Media list */
 
 .socialList {
-    overflow: auto;
+    position: absolute;
+    right: 0px;
 }
 
-.socialList li {
-    list-style: none;
-    float: left;
-}
-
-.socialList li a i {
+.socialList a i {
     background: #205D7A;
     color: #fff;
     width: 40px;
-    height: 30px;
+    height: 20px;
     font-size: 25px;
     text-align: center;
     margin: auto;
     padding-top: 15%;
+    padding-bottom: 20%;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
@@ -25,8 +22,9 @@
     transition: all 0.2s ease-in-out;
 }
 
-.socialList li a:hover {
-    opacity: 0.7;
+.socialList a:hover {
+    background-color: gold;
+    box-shadow: 0 0 15px 10px gold;
 }
 
 .socialList .fa-facebook {
