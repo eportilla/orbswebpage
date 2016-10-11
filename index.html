@@ -40,44 +40,35 @@
 	<!-- Left Nav Bar -->
 	<!-- Collapse Button is the button to open the navigation bar -->
 	<div id="open-left-menu" class="sidenav sidenav-left collapse-btn">
-		<a href="javascript:void(0)" id="collapseLeftbtn" onclick="getElementById('sound_confirm').play();openLeftnav();" onmouseover="getElementById('sound_hover').play();">&#9776;</a>
+		<a href="javascript:void(0)" id="collapseLeftbtn" onclick="playSoundOnClick();openLeftnav();" onmouseover="playSoundOnHover()">&#9776;</a>
 	</div>
 
 	<div id="sideNavleft" class="sidenav sidenav-left menu-buttons">
 		<!-- Close Navigation bar button -->
-		<a href="javascript:void(0)" class="closebtn" onclick="getElementById('sound_confirm').play();closeLeftnav();" onmouseover="getElementById('sound_hover').play();">&times;</a>
+		<a href="javascript:void(0)" class="closebtn" onclick="playSoundOnClick();closeLeftnav();" onmouseover="playSoundOnHover()">&times;</a>
 
 		<!-- Menu Buttons -->
-		<a class="stripedNav" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DOWNLOAD</a>
+		<a class="stripedNav" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">DOWNLOAD</a>
 
-		<a href="https://orbs.itch.io/orbs/purchase" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">PURCHASE GAME KEY</a>
+		<a href="https://orbs.itch.io/orbs/purchase" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">PURCHASE GAME KEY</a>
 
-		<a class="stripedNav" href="howtoplay.html" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">HOW TO PLAY</a>
+		<a class="stripedNav" href="howtoplay.html" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">HOW TO PLAY</a>
 
-		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW LEADERBOARD</a>
+		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">VIEW LEADERBOARD</a>
 
-		<a class="stripedNav" href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">VIEW CORE DESTRUCTION HISTORY</a>
+		<a class="stripedNav" href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">VIEW CORE DESTRUCTION HISTORY</a>
 
-		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">DISCUSS ORBS</a>
+		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">DISCUSS ORBS</a>
 
-		<a class="stripedNav" href="mailto:orbs@i-show-you.de" onmouseover="getElementById('sound_hover').play();" onclick="getElementById('sound_confirm').play();">EMAIL DEVELOPER</a>
+		<a class="stripedNav" href="mailto:orbs@i-show-you.de" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">EMAIL DEVELOPER</a>
 		
 	</div>
-
-	<!--<div class="videoPanel">
-		<div class="wrapper">-->
-			<!-- Added loop=1&playlist=[Youtube vid ID] to loop the video
-					 enablejsapi=1 to use the youtube iframe api to mute the video
-			-->
-			<!--<iframe id="video" width="640" height="360" src="https://www.youtube.com/embed/z8brMKMvGc4?wmode=transparent&autoplay=1&loop=1&playlist=z8brMKMvGc4&rel=0&controls=0&showinfo=0&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>-->
 
 	<!-- Content -->
 	<div id="main" class="main">
 
-		<a href="#" onclick="getElementById('sound_confirm').play();openRightnav();" onmouseover="getElementById('sound_hover').play();">Download</a>
-		<a href="#" onclick="getElementById('sound_confirm').play();openRightnav();" onmouseover="getElementById('sound_hover').play();">Game Key</a>
+		<a href="#" onclick="playSoundOnClick()openRightnav();" onmouseover="playSoundOnHover()">Download</a>
+		<a href="#" onclick="playSoundOnClick()openRightnav();" onmouseover="playSoundOnHover()">Game Key</a>
 
 
 	</div>
@@ -85,31 +76,31 @@
 	<!-- Right Nav Bar -->
 	<!-- Collapse Button is the button to open the navigation bar -->
 	<div id="open-right-menu" class="sidenav sidenav-right collapse-btn">
-		<a href="javascript:void(0)" id="collapseRightbtn" onclick="getElementById('sound_confirm').play();openRightnav();" onmouseover="getElementById('sound_hover').play();">&#9776;</a>
+		<a href="javascript:void(0)" id="collapseRightbtn" onclick="playSoundOnClick();openRightnav();" onmouseover="playSoundOnHover()">&#9776;</a>
 	</div>
 
 	<div id="sideNavright" class="sidenav sidenav-right menu-buttons">
 		<!-- Close Navigation bar button -->
-		<a href="javascript:void(0)" id="close-right-btn" class="closebtn" onclick="getElementById('sound_confirm').play();closeRightnav();" onmouseover="getElementById('sound_hover').play();">&times;</a>
+		<a href="javascript:void(0)" id="close-right-btn" class="closebtn" onclick="playSoundOnClick();closeRightnav();" onmouseover="playSoundOnHover()">&times;</a>
 
 		<!-- Social Media -->
 		<div class="socialList">
-			<a href="http://orbs.itch.io/orbs" title="View Orbs on itch.io"><img src="img/itch.png" alt="Orbs on itch.io"></a>
+			<a href="http://orbs.itch.io/orbs" title="View Orbs on itch.io" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><img src="img/itch.png" alt="Orbs on itch.io"></a>
 		
-			<a href="http://gamejolt.com/games/orbs/111386" title="View Orbs on Gamejolt"><img src="img/gamejolt.png" alt="Orbs on Gamejolt"></a>
+			<a href="http://gamejolt.com/games/orbs/111386" title="View Orbs on Gamejolt" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><img src="img/gamejolt.png" alt="Orbs on Gamejolt"></a>
 			
-			<a href="https://www.twitch.tv/directory/game/Orbs" title="View Orbs on Twitch"><i class="fa fa-twitch"></i></a>
+			<a href="https://www.twitch.tv/directory/game/Orbs" title="View Orbs on Twitch" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-twitch"></i></a>
 
-			<a href="https://www.youtube.com/channel/UCFh_WuMJSXBeM5i5WGJ3ofg" title="View Orbs on Youtube"><i class="fa fa-youtube"></i></a>
+			<a href="https://www.youtube.com/channel/UCFh_WuMJSXBeM5i5WGJ3ofg" title="View Orbs on Youtube" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-youtube"></i></a>
 
-			<a href="http://www.facebook.com/orbspage/" title="View Orbs on Facebook"><i class="fa fa-facebook"></i></a>
+			<a href="http://www.facebook.com/orbspage/" title="View Orbs on Facebook" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-facebook"></i></a>
 
-			<a href="https://twitter.com/OrbsGame" title="View Orbs on Twitter"><i class="fa fa-twitter"></i></a>
+			<a href="https://twitter.com/OrbsGame" title="View Orbs on Twitter" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-twitter"></i></a>
 		</div>
 
 	</div>
 
-	<script type="text/javascript" src="js/sideNav.js"></script>
+	<script type="text/javascript" src="js/pageScript.js"></script>
 
 </body>
 
