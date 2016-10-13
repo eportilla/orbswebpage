@@ -38,15 +38,15 @@ function playSoundOnHover() {
 */  
 
 // Get the viewport window width this is used to set the width of the nav bars
-function getWindowWidth() {
+/*function getWindowWidth() {
   var windWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
 
-  var width = "20%";
+  var width = "20%";*/
   /*if (windWidth <= 768) {
     width = "50%";
   }*/
 
-  return width;
+  /*return width;
 }
 
 function openLeftnav() {
@@ -67,4 +67,4 @@ function openRightnav() {
 function closeRightnav() {
   document.getElementById("sideNavright").style.width = "0";
   document.getElementById("open-right-menu").style.width = getWindowWidth();
-}
+}*/

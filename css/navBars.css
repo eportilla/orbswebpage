@@ -5,7 +5,6 @@
     position: fixed;
     top: 0;
     overflow-x: hidden;
-    padding-top: 20%;
     z-index: 1;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -16,39 +15,23 @@
 
 .sidenav-left {
     left: 0;
+    padding-top: 15px;
 }
 
 .sidenav-right {
     right: 0;
+    padding-top: 20%;
 }
 
 .menu-buttons {
-    width: 20%;
-}
-
-.collapse-btn {
-    width: 0;
-}
-
-.collapse-btn a {
-    z-index: 2;
-    color: yellow;
-    margin: 15px;
-    text-decoration: none;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    width: 25%;
 }
 
 .menu-buttons a {
     z-index: 2;
+    width: 85%;
     padding: 5px 5px 5px 5px;
-    font-size: 18px;
+    font-size: 14px;
     text-decoration: none;
     display: block;
     color: yellow;
@@ -62,32 +45,17 @@
     transition: all 0.2s ease-in-out;
 }
 
-.sidenav-left a, .menu-buttons #close-right-btn {
-    margin: 15px;
+.sidenav-left a {
+    margin: 10px;
 }
 
-.stripedNav {
+/*.stripedNav {
     background-color: #777700;
-}
+}*/
 
-.sidenav-left a:hover, .collapse-btn #collapseLeftbtn:hover, .menu-buttons #close-right-btn:hover, .collapse-btn #collapseRightbtn:hover {
+.sidenav-left a:hover {
     color: black;
     background: gold;
     box-shadow: 0 0 15px 10px gold;
     text-decoration: none;
-}
-
-.sidenav-left .closebtn, .collapse-btn #collapseLeftbtn, .sidenav-right .closebtn, .collapse-btn #collapseRightbtn {
-    position: absolute;
-    top: 10px;
-    font-size: 36px;
-    cursor:pointer;
-}
-
-.sidenav-left .closebtn, .collapse-btn #collapseLeftbtn {
-    left: 5px;
-}
-
-.sidenav-right .closebtn, .collapse-btn #collapseRightbtn {
-    right: 5px;
 }

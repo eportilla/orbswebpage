@@ -16,21 +16,35 @@ html {
     font-family: Orbitron-Bold;
 }
 
+.wrapper {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    height: 0;
+    width:60%;
+    overflow: hidden;    
+    border: 5px solid gold;
+    -moz-border-radius: 60%;
+    -webkit-border-radius: 60%;
+    border-radius: 60%;
+    box-shadow: 0 0 50px 20px gold;
+    z-index: -99;
+}
+
 video { 
     position: fixed;
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 150%;
     width: auto;
     height: auto;
     z-index: -100;
-    -ms-transform: translate(-20%, 0);
-    -webkit-transform: translate(-20%, -20%);
-    transform: translate(-20%, 0);
-    background: black url("../img/backImage.png") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -ms-transform: translate(-15%, 5%);
+    -webkit-transform: translate(-15%, 5%);
+    transform: translate(-15%, 5%);
     -webkit-transition: 1s opacity;
     -moz-transition: 1s opacity;
     -o-transition: 1s opacity;
@@ -42,16 +56,18 @@ video {
     position: absolute;
     transition: all .5s;
     padding: 16px;
-    margin-left: 20%;
-    margin-right: 20%;
-    top: 20%;
+    top: 0;
+    left: 50%;
+    -ms-transform: translate(-50%, 0);
+    -webkit-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
     width: 60%;
     color: yellow;
-    background-color: rgba(0,0,0,0.7); /* rgb & opacity */
+    //background-color: rgba(0,0,0,0.7); /* rgb & opacity */
 }
 
 .main a {
-    width: 35%;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
@@ -60,7 +76,7 @@ video {
     font-size: 46px;
     text-decoration: none;
     display: block;
-    color: yellow;
+    color: gold;
     text-align: center;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -70,7 +86,7 @@ video {
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    background-color: #777700;
+    background-color: black;
 }
 
 .main a:hover {
@@ -85,25 +101,6 @@ video {
     height: auto;
     margin: 15px;
     border: 1px solid gold;
-}
-
-.wrapper {
-    position: fixed;
-    top: 0;
-    left: 20%;
-    right: 20%;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
-    margin: auto;
-    height: 0;
-    width:60%;
-    overflow: hidden;    
-    border: 5px solid gold;
-    -moz-border-radius: 60%;
-    -webkit-border-radius: 60%;
-    border-radius: 60%;
-    box-shadow: 0 0 50px 20px gold;
-    z-index: -99;
 }
 
 @media screen and (max-width: 768px) { 
