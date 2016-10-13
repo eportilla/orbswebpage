@@ -12,8 +12,14 @@
 	<link rel="stylesheet" type="text/css" href="css/mediaButtons.css">
 	<link rel="stylesheet" type="text/css" href="css/navBars.css">
 
+	<!-- Image full screen -->
+	<link rel="stylesheet" type="text/css" href="css/imageviewer.css">
+
 	<!-- Font awesome for social media icons -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!-- JQuery lib for image full screen -->
+	<script src="lib/jquery-1.11.3.min.js"></script>
 
 	<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">
 	<title>Orbs</title>
@@ -62,13 +68,13 @@
 		<a href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onclick="playSoundOnClick()openRightnav();" onmouseover="playSoundOnHover()">Download</a>
 		<a href="https://orbs.itch.io/orbs/purchase" onclick="playSoundOnClick()openRightnav();" onmouseover="playSoundOnHover()">Get Game Key</a>
 
-		<div class="images">
-			<img src="img/test.png" alt="Gameplay">
-			<img src="img/test2.png" alt="Gameplay 2">
-			<img src="img/test.png" alt="Gameplay 3">
-			<img src="img/test2.png" alt="Gameplay">
-			<img src="img/test.png" alt="Gameplay 2">
-			<img src="img/test2.png" alt="Gameplay 3">
+		<div class="images cf">
+			<img src="img/test.png" alt="Gameplay" class="gallery-items">
+			<img src="img/test2.png" alt="Gameplay 2" class="gallery-items">
+			<img src="img/test.png" alt="Gameplay 3" class="gallery-items">
+			<img src="img/test2.png" alt="Gameplay" class="gallery-items">
+			<img src="img/test.png" alt="Gameplay 2" class="gallery-items">
+			<img src="img/test2.png" alt="Gameplay 3" class="gallery-items">
 		</div>
 
 		<p>Orbs is a new truly unique science-fiction Massive Multiplayer Online Role Playing Game which features an open world where players are sent to explore, control and rule futuristic and mysterious zones in order to discover their secrets. Players are not only fighting their way through the world, but are also in a permanent conflict and competition against each other.</p>
@@ -101,6 +107,20 @@
 	</div>
 
 	<script type="text/javascript" src="js/pageScript.js"></script>
+	<script type="text/javascript" src="js/imageviewer.js"></script> 
+
+	<!-- For the image full screen -->
+	<script type="text/javascript">
+		$(function () {
+    var viewer = ImageViewer();
+	    $('.gallery-items').click(function () {
+	        var imgSrc = this.src,
+	            highResolutionImage = $(this).data('high-res-img');
+	 
+	        viewer.show(imgSrc, highResolutionImage);
+	    });
+		});
+	</script>
 
 </body>
 

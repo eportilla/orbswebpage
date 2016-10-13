@@ -103,11 +103,17 @@ video {
     border: 1px solid gold;
 }
 
+.images img:hover {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 768px) { 
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
+  .images img { margin-left: auto; margin-right: auto; display: block; }
 }
 @media screen and (max-device-width: 768px) {
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
+  .images img { margin-left: auto; margin-right: auto; display: block; }
 }
