@@ -80,7 +80,7 @@ video {
     color: gold;
     text-align: center;
     background-color: black;
-    background: linear-gradient(89deg, #000000, #000000, #ffd700, #ffffff, #ffd700, #000000, #000000);
+    background: linear-gradient(90deg, #000000, #000000, #ffd700, #ffffff, #ffd700, #000000, #000000);
     background-size: 1000% 1000%;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
