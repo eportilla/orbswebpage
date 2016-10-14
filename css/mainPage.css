@@ -148,6 +148,8 @@ video {
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
   .images img { margin-left: auto; margin-right: auto; display: block; }
+  .main-button { font-size: 25px; }
+  .inline-vid iframe { width: 100%; }
 }
 @media screen and (max-device-width: 768px) {
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }

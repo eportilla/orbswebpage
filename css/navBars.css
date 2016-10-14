@@ -70,3 +70,7 @@
 .signature h6 {
     color: gold;
 }
+
+@media screen and (max-width: 768px) { 
+    .menu-buttons a { font-size: 10px; }
+}
