@@ -96,6 +96,12 @@ video {
     text-decoration: none;
 }
 
+.inline-vid {
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
 .images img {
     width: 248px;
     height: auto;
