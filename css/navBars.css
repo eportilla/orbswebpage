@@ -59,3 +59,14 @@
     box-shadow: 0 0 15px 10px gold;
     text-decoration: none;
 }
+
+.signature {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+}
+
+.signature h6 {
+    color: gold;
+}
