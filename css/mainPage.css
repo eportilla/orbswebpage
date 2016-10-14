@@ -18,10 +18,10 @@ html {
 
 .wrapper {
     position: fixed;
-    top: 0;
+    top: 25px;
     left: 50%;
-    padding-bottom: 56.25%; /* 16:9 */
-    padding-top: 25px;
+    padding-bottom: 52%;
+    margin-bottom: 15%;
     -ms-transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
@@ -42,9 +42,9 @@ video {
     width: auto;
     height: auto;
     z-index: -100;
-    -ms-transform: translate(-15%, 5%);
-    -webkit-transform: translate(-15%, 5%);
-    transform: translate(-15%, 5%);
+    -ms-transform: translate(-15%, 0);
+    -webkit-transform: translate(-15%, 0);
+    transform: translate(-15%, 0);
     -webkit-transition: 1s opacity;
     -moz-transition: 1s opacity;
     -o-transition: 1s opacity;
@@ -67,6 +67,10 @@ video {
     //background-color: rgba(0,0,0,0.7); /* rgb & opacity */
 }
 
+.main p {
+    text-align: justify;
+}
+
 .main-button {
     width: 45%;
     margin-left: auto;
@@ -80,7 +84,7 @@ video {
     color: gold;
     text-align: center;
     background-color: black;
-    background: linear-gradient(90deg, #000000, #000000, #ffd700, #ffffff, #ffd700, #000000, #000000);
+    background: linear-gradient(90deg, #000000, #000000, #000000, #000000, #ffffff, #000000, #000000, #000000, #000000);
     background-size: 1000% 1000%;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -90,14 +94,17 @@ video {
     -o-transition: all 0.2s ease-in-out;
     -ms-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+
+.gradient-ani {
     -webkit-animation-name: flash;
     -moz-animation-name: flash;
     -o-animation-name: flash;
     animation-name: flash;
-    -webkit-animation: flash 20s ease infinite;
-    -moz-animation: flash 20s ease infinite;
-    -o-animation: flash 20s ease infinite;
-    animation: flash 20s ease infinite;
+    -webkit-animation: flash 5s ease 5s 5;
+    -moz-animation: flash 5s ease 5s 5;
+    -o-animation: flash 5s ease 5s 5;
+    animation: flash 5s ease 5s 5;
 }
 @-webkit-keyframes flash {
     0%{background-position:0% 51%}
@@ -133,10 +140,20 @@ video {
     margin-bottom: 5%;
 }
 
+.inline-vid iframe {
+    border: 1px solid gold;
+}
+
+.images {
+    display: block;
+    text-align: center;
+}
+
 .images img {
     width: 248px;
     height: auto;
-    margin: 15px;
+    margin: 10px;
+    display: inline-block;
     border: 1px solid gold;
 }
 
