@@ -21,12 +21,13 @@ html {
     top: 25px;
     left: 50%;
     padding-bottom: 52%;
-    margin-bottom: 15%;
+    padding-bottom: 93.5vh;
     -ms-transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    height: 0;
-    width:60%;
+    height: auto;
+    width: 60%;
+    width: 60vmax;
     overflow: hidden;    
     border: 5px solid gold;
     -moz-border-radius: 60%;
@@ -63,7 +64,7 @@ video {
     transform: translate(-50%, 0);
     width: 60%;
     color: yellow;
-    font-size: 18px;
+    font-size: 18vw;
     //background-color: rgba(0,0,0,0.7); /* rgb & opacity */
 }
 
@@ -72,13 +73,15 @@ video {
 }
 
 .main-button {
-    width: 45%;
+    width: 30vw;
     margin-left: auto;
     margin-right: auto;
     margin-top: 2%;
     margin-bottom: 2%;
     padding: 15px 15px 15px 15px;
     font-size: 46px;
+    font-size: 3vw;
+    overflow: auto;
     text-decoration: none;
     display: block;
     color: gold;
@@ -165,7 +168,7 @@ video {
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
   .images img { margin-left: auto; margin-right: auto; display: block; }
-  .main-button { font-size: 25px; }
+  //.main-button { font-size: 25px; }
   .inline-vid iframe { width: 100%; }
 }
 @media screen and (max-device-width: 768px) {
