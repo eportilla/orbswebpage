@@ -738,9 +738,9 @@
     ImageViewer.defaults = {
         zoomValue: 100,
         snapView: true,
-        maxZoom: 500,
+        maxZoom: 100,
         refreshOnResize: true,
-        zoomOnMouseWheel : true
+        zoomOnMouseWheel : false
     }
 
     window.ImageViewer = function (container, options) {

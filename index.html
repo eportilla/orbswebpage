@@ -46,23 +46,22 @@
 	<!-- Left Nav Bar -->
 	<div id="sideNavleft" class="sidenav sidenav-left menu-buttons">
 		<!-- Menu Buttons -->
-		<img src="img/icon_smallest.png">
 
-		<a href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">DOWNLOAD</a>
+		<a href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> DOWNLOAD</a>
 
-		<a href="https://orbs.itch.io/orbs/purchase" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">PURCHASE GAME KEY</a>
+		<a href="https://orbs.itch.io/orbs/purchase" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> PURCHASE GAME KEY</a>
 
-		<a href="howtoplay.html" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">HOW TO PLAY</a>
+		<a href="howtoplay.html" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> HOW TO PLAY</a>
 
-		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">VIEW LEADERBOARD</a>
+		<a href="http://www.i-show-you.de/php/orbs/leaderboard.php" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> VIEW LEADERBOARD</a>
 
-		<a href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">VIEW CORE DESTRUCTION HISTORY</a>
+		<a href="http://www.i-show-you.de/php/orbs/CoreDestructionHistory.php" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> VIEW CORE DESTRUCTION HISTORY</a>
 
-		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">DISCUSS ORBS</a>
+		<a href="http://www.i-show-you.de/php/board/viewforum.php?f=7" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> DISCUSS ORBS</a>
 
-		<a href="http://www.i-show-you.de/blog/category/orbs/" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">DEVELOPMENT BLOG</a>
+		<a href="http://www.i-show-you.de/blog/category/orbs/" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> DEVELOPMENT BLOG</a>
 
-		<a href="mailto:orbs@i-show-you.de" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">EMAIL DEVELOPER</a>
+		<a href="mailto:orbs@i-show-you.de" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> EMAIL DEVELOPER</a>
 		
 	</div>
 
@@ -92,7 +91,7 @@
 	</div>
 
 	<!-- Right Nav Bar -->
-	<div id="sideNavright" class="sidenav sidenav-right menu-buttons">
+	<div id="sideNavright" class="sidenav sidenav-right social-buttons">
 		<!-- Social Media -->
 		<div class="socialList">
 		<a href="http://www.indiedb.com/games/orbs" title="View Orbs on indiedb.com" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><img src="img/indiedb.png" alt="Orbs on indiedb.com"></a>
@@ -120,7 +119,7 @@
     var viewer = ImageViewer();
 	    $('.gallery-items').click(function () {
 	        var imgSrc = this.src,
-	            highResolutionImage = $(this).data('high-res-img');
+	            highResolutionImage = $(this).data('high-res-src');
 	 
 	        viewer.show(imgSrc, highResolutionImage);
 	    });

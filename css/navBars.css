@@ -15,7 +15,7 @@
 
 .sidenav-left {
     left: 0;
-    padding-top: 15px;
+    padding-top: 20%;
 }
 
 .sidenav-right {
@@ -23,17 +23,24 @@
     padding-top: 20%;
 }
 
-.menu-buttons {
+.menu-buttons, .social-buttons {
     width: 25%;
 }
 
+.social-buttons a {
+    display: block;
+}
+
 .menu-buttons a {
+    display: inline-block;
+}
+
+.menu-buttons a, .social-buttons a {
     z-index: 2;
-    width: 85%;
+    width: auto;
     padding: 5px 5px 5px 5px;
     font-size: 14px;
     text-decoration: none;
-    display: block;
     color: yellow;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
@@ -45,8 +52,14 @@
     transition: all 0.2s ease-in-out;
 }
 
+.menu-buttons a span img {
+    width: 0;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
 .sidenav-left a {
-    margin: 10px;
+    margin: 10px 5% 10px 10px;
 }
 
 /*.stripedNav {
@@ -58,6 +71,12 @@
     background: gold;
     box-shadow: 0 0 15px 10px gold;
     text-decoration: none;
+    width: auto;
+}
+
+.sidenav-left a:hover span img {
+    width: 20px;
+    visibility: visible;
 }
 
 @media screen and (max-width: 768px) { 
