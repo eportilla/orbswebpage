@@ -14,18 +14,23 @@ html {
     -o-background-size: cover;
     background-size: cover;
     font-family: Orbitron-Bold;
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
 }
 
 .wrapper {
     position: fixed;
-    top: 25px;
+    top: 8px;
     left: 50%;
-    padding-bottom: 52%;
-    margin-bottom: 15%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    margin-bottom: 5%;
     -ms-transform: translate(-50%, 0);
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
-    height: 0;
+    height: auto;
     width:60%;
     overflow: hidden;    
     border: 5px solid gold;
@@ -62,13 +67,18 @@ video {
     -webkit-transform: translate(-50%, 0);
     transform: translate(-50%, 0);
     width: 60%;
-    color: yellow;
-    font-size: 18px;
-    //background-color: rgba(0,0,0,0.7); /* rgb & opacity */
 }
 
 .main p {
+    color: yellow;
+    font-size: 18px;
     text-align: justify;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    background-color: rgba(0,0,0,0.7); /* rgb & opacity */
+    padding: 1%;
+    border: 1px solid gold;
 }
 
 .main-button {
@@ -162,12 +172,19 @@ video {
     cursor: pointer;
 }
 
+@media screen and (max-width: 1000px) {
+    .main-button { font-size: 40px; }
+}
+@media screen and (max-width: 900px) {
+    .main-button { font-size: 30px; }
+}
 @media screen and (max-width: 768px) { 
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
   #bgvid { display: none; }
   .images img { margin-left: auto; margin-right: auto; display: block; }
   .main-button { font-size: 25px; }
   .inline-vid iframe { width: 100%; }
+  .main p { font-size: 14px; }
 }
 @media screen and (max-device-width: 768px) {
   html { background: black url("../img/backImage.png") no-repeat center center fixed; }
