@@ -34,37 +34,36 @@ function playSoundOnHover() {
   document.getElementById('sound_hover').play();
 }
 
-/* side navigation bars
-*/  
+/* modal
+*/
 
-// Get the viewport window width this is used to set the width of the nav bars
-/*function getWindowWidth() {
-  var windWidth = Math.max(document.documentElement.clientWidth, window.innerWidth || 0)
+// Get the modal
+var modal = document.getElementById("download-modal");
 
-  var width = "20%";*/
-  /*if (windWidth <= 768) {
-    width = "50%";
-  }*/
+// Get the button that opens the modal
+var btnnav = document.getElementById("dlbtn-nav");
 
-  /*return width;
+var btnmain = document.getElementById("dlbtn-main");
+
+btnnav.addEventListener('click', openModal);
+btnmain.addEventListener('click', openModal);
+
+// Get the <span> element that closes the modal
+var btnclose = document.getElementById("btnclose-modal");
+
+// When the user clicks the button, open the modal
+function openModal(){
+    modal.style.display = "block";
 }
 
-function openLeftnav() {
-	document.getElementById("open-left-menu").style.width = "0";
-	document.getElementById("sideNavleft").style.width = getWindowWidth();
+// When the user clicks on <span> (x), close the modal
+btnclose.onclick = function() {
+    modal.style.display = "none";
 }
 
-function closeLeftnav() {
-	document.getElementById("sideNavleft").style.width = "0";
-  document.getElementById("open-left-menu").style.width = getWindowWidth();
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
-
-function openRightnav() {
-	document.getElementById("open-right-menu").style.width = "0";
-  document.getElementById("sideNavright").style.width = getWindowWidth();
-}
-
-function closeRightnav() {
-  document.getElementById("sideNavright").style.width = "0";
-  document.getElementById("open-right-menu").style.width = getWindowWidth();
-}*/

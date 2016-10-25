@@ -47,7 +47,7 @@
 	<div id="sideNavleft" class="sidenav sidenav-left menu-buttons">
 		<!-- Menu Buttons -->
 
-		<a href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> DOWNLOAD</a>
+		<a id="dlbtn-nav" href="#download-modal" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> DOWNLOAD</a>
 
 		<a href="https://orbs.itch.io/orbs/purchase" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> GET GAME KEY</a>
 
@@ -70,8 +70,8 @@
 
 		<p>Orbs is a new truly unique science-fiction Massive Multiplayer Online Role Playing Game which features an open world where players are sent to explore, control and rule futuristic and mysterious zones in order to discover their secrets. Players are not only fighting their way through the world, but are also in a permanent conflict and competition against each other.</p>
 
-		<a class="main-button gradient-ani" href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe" onclick="playSoundOnClick()openRightnav();" onmouseover="playSoundOnHover()">DOWNLOAD</a>
-		<a  class="main-button gradient-ani" href="https://orbs.itch.io/orbs/purchase" onclick="playSoundOnClick()openRightnav();" onmouseover="playSoundOnHover()">GET GAME KEY</a>
+		<a id="dlbtn-main" class="main-button gradient-ani" href="#download-modal" onclick="playSoundOnClick()" onmouseover="playSoundOnHover()">DOWNLOAD</a>
+		<a  class="main-button gradient-ani" href="https://orbs.itch.io/orbs/purchase" onclick="playSoundOnClick()" onmouseover="playSoundOnHover()">GET GAME KEY</a>
 
 		<div class="inline-vid">
 			<iframe width="640" height="360" src="https://www.youtube.com/embed/z8brMKMvGc4?autoplay=0&rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
@@ -88,6 +88,20 @@
 			<img src="img/1476470654-.png" data-high-res-src="img/1476470654.png" alt="" class="gallery-items">
 		</div>
 
+	</div>
+
+	<!-- modal for download buttons -->
+	<div id="download-modal" class="dl-modal">
+	  <div class="modal-content">
+		  <div class="modal-header">
+				<span class="close-modal"><a href="#" id="btnclose-modal">&times;</a></span>
+			</div>
+			<div class="modal-body">
+		    <a href="http://www.i-show-you.de/downloads/orbs/Orbs.sfx.exe"><i class="fa fa-windows fa-5x" aria-hidden="true"></i></a>
+		    <a href="#"><i class="fa fa-linux fa-5x" aria-hidden="true"></i></a>
+		    <a href="#"><i class="fa fa-apple fa-5x" aria-hidden="true"></i></a>
+	    </div>
+	  </div>
 	</div>
 
 	<!-- Right Nav Bar -->

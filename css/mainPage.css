@@ -94,6 +94,9 @@ video {
     color: gold;
     text-align: center;
     background-color: black;
+    background: -webkit-linear-gradient(90deg, #000000, #000000, #000000, #000000, #ffffff, #000000, #000000, #000000, #000000);
+    background: -o-linear-gradient(90deg, #000000, #000000, #000000, #000000, #ffffff, #000000, #000000, #000000, #000000);
+    background: -moz-linear-gradient(90deg, #000000, #000000, #000000, #000000, #ffffff, #000000, #000000, #000000, #000000);
     background: linear-gradient(90deg, #000000, #000000, #000000, #000000, #ffffff, #000000, #000000, #000000, #000000);
     background-size: 1000% 1000%;
     -moz-border-radius: 5px;
@@ -169,6 +172,51 @@ video {
 }
 
 .images img:hover {
+    cursor: pointer;
+}
+
+.dl-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 100; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+
+.modal-body a {
+    color: black;
+    margin: 5%;
+}
+
+.modal-body a i:hover {
+    cursor: pointer;
+}
+
+.close-modal a {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close-modal a:hover,
+.close-modal a:focus {
+    color: black;
     cursor: pointer;
 }
 
