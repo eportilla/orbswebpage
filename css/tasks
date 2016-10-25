@@ -1,0 +1,25 @@
+I would like to see the links on the left being aligned to the right, towards the mask border, and yes, they should align along the circular border of the mask, vertically centered with a little more vertical space between each other, use the space. Keep trying to make the links on the left align to the mask, that would be awesome. If you can not do this, make then vertically centered like the social button on the right.
+
+And a technical question: I want to stay on the page for internal links like the leaderboard etc. Can you come up with a good idea how to do that? Is it possible to have a "Home" section and other section that are embedded as the front page, without the background movie playing. I will further think about this, but it is something that we need to address.
+
+Concerning the links targeting on the left panel:
+Yes, that is what I mean. If it can be done I would like to open the page links on the left within the parent page. The menu and social remain the same, background video and front thing we got now is only for "HOME" (new menu item).
+Maybe I'll add a "MEDIA" menu item as well to have a place to visit videos and screenshots etc.
+I'll create a mockup if you need to. - for this work the other HTML pages need to be worked on as well
+
+
+Can you add next/previous navigation when in fullscreen screenshot mode? (prio 2)
+You dont need to create a gallery by yourself. I am sure you can find somethign that fits our needs. Low-Res/High-Res view and next/previous buttons should be available somewhere I hope.
+I've seen that you can zoom the high res images, which is not even required. You may disable it or replace the framework if you can find a better one.
+Still, the low res image is displayed when I click on a small preview image. (BUG)
+<img src="img/1476470132-.png" data-high-res-src="img/1476470132.png" alt="" class="gallery-items">
+
+Please note the "-" at the end of the file name, they are 2 different images.
+But when I click on the image on the page, it is still using the low res version to display in fullscreen.
+
+Do you think we need something to scroll without having a scrollbar? For people without a mousewheel or with notebooks?
+
+The yellow background when hovering a menu item does not fit anymore. It's too large also. I think simply removing this effect is fine, letting the icon indicate the hovering, unless you can come up with something else.
+When viewing a full screen image, can you add a border around the image? It is sometimes hard to determinate where is screenshot and where is background ;)
+
+The download buttons need to have win/linux/mac icon next to them, there will ne 3 differnt links, but I want only 1 button and a choice of platform. Maybe you got a nice idea how to do that.
