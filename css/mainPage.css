@@ -190,11 +190,11 @@ video {
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background: black url("../img/backImage.png") no-repeat center center fixed;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 30%;
+    box-shadow: inset 0 0 10px 5px #888;
 }
 
 .modal-body a {
@@ -203,7 +203,7 @@ video {
 }
 
 .close-modal a {
-    color: black;
+    color: #fefefe;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -211,7 +211,7 @@ video {
 }
 
 .modal-body a i:hover {
-    color: black;
+    color: #fefefe;
     cursor: pointer;
 }
 
