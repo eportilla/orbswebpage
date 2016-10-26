@@ -194,28 +194,23 @@ video {
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 30%;
 }
 
 .modal-body a {
-    color: black;
+    color: #aaaaaa;
     margin: 5%;
 }
 
-.modal-body a i:hover {
-    cursor: pointer;
-}
-
 .close-modal a {
-    color: #aaaaaa;
+    color: black;
     float: right;
     font-size: 28px;
     font-weight: bold;
     text-decoration: none;
 }
 
-.close-modal a:hover,
-.close-modal a:focus {
+.modal-body a i:hover {
     color: black;
     cursor: pointer;
 }
