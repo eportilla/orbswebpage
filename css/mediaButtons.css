@@ -49,3 +49,12 @@
 .socialList .fa-steam-square {
     background: #383838;
 }
+
+.socialList .fa-wordpress {
+    background: #04769C;
+}
+
+.socialList .fa-wikipedia-w {
+    background: #C7C8CA;
+    color: #000;
+}
