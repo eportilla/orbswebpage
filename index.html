@@ -9,7 +9,6 @@
 
 	<!-- Style for the page -->
 	<link rel="stylesheet" type="text/css" href="css/mainPage.css">
-	<link rel="stylesheet" type="text/css" href="css/mediaButtons.css">
 	<link rel="stylesheet" type="text/css" href="css/navBars.css">
 
 	<!-- Image full screen -->
@@ -44,7 +43,7 @@
 	</audio>
 
 	<!-- Left Nav Bar -->
-	<div id="sideNavleft" class="sidenav sidenav-left menu-buttons">
+	<div id="sideNavleft" class="sidenav sidenav-left">
 		<!-- Menu Buttons -->
 
 		<a href="index.html" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><span><img src="img/icon_smallest.png"></span> HOME</a>
@@ -103,29 +102,27 @@
 	</div>
 
 	<!-- Right Nav Bar -->
-	<div id="sideNavright" class="sidenav sidenav-right social-buttons">
+	<div id="sideNavright" class="sidenav sidenav-right">
 		<!-- Social Media -->
-		<div class="socialList">
-		<a href="http://www.indiedb.com/games/orbs" title="View Orbs on indiedb.com" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><img src="img/indiedb.png" alt="Orbs on indiedb.com"></a>
+		<a id="indiedb" href="http://www.indiedb.com/games/orbs" title="View Orbs on indiedb.com" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">INDIEDB <img src="img/indiedb.png" alt="Orbs on indiedb.com"></a>
 
-		<a href="https://www.youtube.com/channel/UCFh_WuMJSXBeM5i5WGJ3ofg" title="View Orbs on Youtube" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+		<a id="youtube" href="https://www.youtube.com/channel/UCFh_WuMJSXBeM5i5WGJ3ofg" title="View Orbs on Youtube" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">YOUTUBE <i class="fa fa-youtube" aria-hidden="true"></i></a>
 
-		<a href="https://twitter.com/OrbsGame" title="View Orbs on Twitter" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+		<a id="twitter" href="https://twitter.com/OrbsGame" title="View Orbs on Twitter" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">TWITTER <i class="fa fa-twitter" aria-hidden="true"></i></a>
 
-		<a href="http://www.i-show-you.de/blog/category/orbs/" title="View Orbs on Wordpress" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-wordpress" aria-hidden="true"></i></a>
+		<a id="wordpress" href="http://www.i-show-you.de/blog/category/orbs/" title="View Orbs on Wordpress" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">WORDPRESS <i class="fa fa-wordpress" aria-hidden="true"></i></a>
 
-		<a href="https://www.twitch.tv/directory/game/Orbs" title="View Orbs on Twitch" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+		<a id="twitch" href="https://www.twitch.tv/directory/game/Orbs" title="View Orbs on Twitch" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">TWITCH <i class="fa fa-twitch" aria-hidden="true"></i></a>
 
-		<a href="http://www.facebook.com/orbspage/" title="View Orbs on Facebook" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+		<a id="facebook" href="http://www.facebook.com/orbspage/" title="View Orbs on Facebook" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">FACEBOOK <i class="fa fa-facebook" aria-hidden="true"></i></a>
 
-		<a href="http://orbsgame.wikia.com/wiki/OrbsGame_Wiki" title="View Orbs on Wikia" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
+		<a id="wiki" href="http://orbsgame.wikia.com/wiki/OrbsGame_Wiki" title="View Orbs on Wikia" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">WIKI <i class="fa fa-wikipedia-w" aria-hidden="true"></i></a>
 
-		<a href="http://orbs.itch.io/orbs" title="View Orbs on itch.io" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><img src="img/itch.png" alt="Orbs on itch.io"></a>
+		<a id="itch" href="http://orbs.itch.io/orbs" title="View Orbs on itch.io" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">ITCH.IO <img src="img/itch.png" alt="Orbs on itch.io"></a>
 	
-		<a href="http://gamejolt.com/games/orbs/111386" title="View Orbs on Gamejolt" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><img src="img/gamejolt.png" alt="Orbs on Gamejolt"></a>
+		<a id="gamejolt" href="http://gamejolt.com/games/orbs/111386" title="View Orbs on Gamejolt" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">GAMEJOLT <img src="img/gamejolt.png" alt="Orbs on Gamejolt"></a>
 
-		<a href="http://steamcommunity.com/id/isugames/" title="View Orbs on Steam" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()"><i class="fa fa-steam-square"></i></a>
-		</div>
+		<a id="steam" href="http://steamcommunity.com/id/isugames/" title="View Orbs on Steam" target="_blank" onmouseover="playSoundOnHover()" onclick="playSoundOnClick()">STEAM <i class="fa fa-steam-square" aria-hidden="true"></i></a>
 	</div>
 
 	<script type="text/javascript" src="js/pageScript.js"></script>

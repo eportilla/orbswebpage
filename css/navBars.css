@@ -2,77 +2,151 @@
 
 .sidenav {
     height: 100%;
+    width: 25%;
     position: fixed;
     top: 0;
     overflow-x: hidden;
     z-index: 1;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    -ms-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
 }
 
-.sidenav-left {
-    left: 0;
-    padding-top: 20%;
-}
-
-.sidenav-right {
-    right: 0;
-    padding-top: 15%;
-}
-
-.menu-buttons, .social-buttons {
-    width: 25%;
-}
-
-.menu-buttons a, .social-buttons a {
+.sidenav a {
     z-index: 2;
     width: auto;
     display: block;
     padding: 5px 5px 5px 5px;
     font-size: 14px;
     text-decoration: none;
-    color: yellow;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
 }
 
-.menu-buttons a span img {
-    width: 0;
-    vertical-align: middle;
-    visibility: hidden;
-    /*transition: all 0.3s ease-in-out; */
+/*
+ *
+ * Menu buttons
+ *
+ */
+
+.sidenav-left {
+    left: 0;
+    padding-top: 20%;
 }
 
 .sidenav-left a {
+    color: yellow;
     margin: 10px;
 }
 
-/*.stripedNav {
-    background-color: #777700;
+.sidenav-left a span img {
+    width: 0;
+    vertical-align: middle;
+    visibility: hidden;
 }
 
-.sidenav-left a:hover {
-    color: black;
-    background: gold;
-    box-shadow: 0 0 15px 10px gold;
-    text-decoration: none;
-    width: auto;
-}*/
-
 .sidenav-left a:hover span img {
-    width: 14px; /* same as menu-buttons a font-size */
+    width: 14px;
     visibility: visible;
 }
 
+/*
+ *
+ * Social Media buttons
+ *
+ */
+
+.sidenav-right {
+    right: 0;
+    padding-top: 10%;
+}
+
+.sidenav-right a {
+    position: relative;
+    text-align: right;
+}
+
+.sidenav-right a i {
+    background: #205D7A;
+    color: #fff;
+    width: 40px;
+    font-size: 25px;
+    text-align: center;
+    margin: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.sidenav-right a:hover {
+    right: 10px;
+}
+
+/* icon background color */
+.sidenav-right .fa-facebook {
+    background: #3b5998;
+}
+
+.sidenav-right .fa-twitter {
+    background: #00aced;
+}
+
+.sidenav-right .fa-youtube {
+    background: #ff4b39;
+}
+
+.sidenav-right .fa-twitch {
+    background: #6441A5;
+}
+
+.sidenav-right .fa-steam-square {
+    background: #383838;
+}
+
+.sidenav-right .fa-wordpress {
+    background: #04769C;
+}
+
+.sidenav-right .fa-wikipedia-w {
+    background: #C7C8CA;
+    color: #000;
+}
+
+/* text color */
+#indiedb {
+    color: lightgreen;
+}
+
+#youtube {
+    color: #ff4b39;
+}
+
+#twitter {
+    color: #00aced;
+}
+
+#wordpress {
+    color: #04769C;
+}
+
+#twitch {
+    color: #6441A5;
+}
+
+#facebook {
+    color: #3b5998;
+}
+
+#wiki {
+    color: #C7C8CA;
+}
+
+#itch {
+    color: #383838;
+}
+
+#gamejolt {
+    color: #383838;
+}
+
+#steam {
+    color: #383838;
+}
+
 @media screen and (max-width: 768px) { 
-    .menu-buttons a { font-size: 10px; }
+    .sidenav-left a { font-size: 10px; }
 }
