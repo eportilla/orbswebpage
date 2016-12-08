@@ -53,7 +53,7 @@
 
 .sidenav-right {
     right: 0;
-    padding-top: 10%;
+    padding-top: 20%;
 }
 
 .sidenav-right a {
@@ -108,7 +108,7 @@
 
 /* text color */
 #indiedb {
-    color: lightgreen;
+    color: #77C628;
 }
 
 #youtube {
