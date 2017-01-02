@@ -14,7 +14,7 @@
     width: auto;
     display: block;
     padding: 5px 5px 5px 5px;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
 }
 
@@ -35,6 +35,8 @@
 
 .sidenav-left a {
     color: yellow;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0.5px yellow;
     margin: 10px;
 }
 
@@ -116,42 +118,50 @@
 /* text color */
 #indiedb {
     color: #77C628;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #77C628;
 }
 
-#youtube {
+#youtube span {
     color: #ff4b39;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #ff4b39;
 }
 
-#twitter {
+#twitter span {
     color: #00aced;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #00aced;
 }
 
-#wordpress {
+#wordpress span {
     color: #04769C;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #04769C;
 }
 
-#twitch {
+#twitch span {
     color: #6441A5;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #6441A5;
 }
 
-#facebook {
+#facebook span {
     color: #3b5998;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #3b5998;
 }
 
-#wiki {
+#wiki span {
     color: #C7C8CA;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #C7C8CA;
 }
 
-#itch {
+#itch span, #gamejolt span, #steam span {
     color: #383838;
-}
-
-#gamejolt {
-    color: #383838;
-}
-
-#steam {
-    color: #383838;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 1px #383838;
 }
 
 @media screen and (max-width: 768px) { 
