@@ -67,3 +67,18 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+/* Slick carousel
+*/
+
+$(document).ready(function(){
+  $('.image-scroller').slick({
+    autoplay: true,
+    arrows: false,
+    dots: false,
+    dotsClass: 'slick-dots',
+    slidesToShow: 3,
+    centerMode: true,
+    adaptiveHeight: true
+  });
+});

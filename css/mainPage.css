@@ -158,22 +158,18 @@ video {
     border: 1px solid gold;
 }
 
-.images {
-    display: block;
-    text-align: center;
+.image-scroller {
+    z-index: 2;
 }
 
-.images img {
+.image-scroller img {
     width: 248px;
-    height: auto;
-    margin: 10px;
-    display: inline-block;
     border: 1px solid gold;
 }
 
-.images img:hover {
+/*.image img:hover {
     cursor: pointer;
-}
+}*/
 
 .dl-modal {
     display: none; /* Hidden by default */

@@ -6,11 +6,10 @@
     position: fixed;
     display: table;
     overflow-x: hidden;
-    z-index: 1;
+    z-index: -1;
 }
 
 .sidenav a {
-    z-index: 2;
     width: auto;
     display: block;
     padding: 5px 5px 5px 5px;

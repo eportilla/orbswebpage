@@ -10,9 +10,9 @@
 	<!-- Style for the page -->
 	<link rel="stylesheet" type="text/css" href="css/mainPage.css">
 	<link rel="stylesheet" type="text/css" href="css/navBars.css">
-
-	<!-- Image full screen -->
-	<link rel="stylesheet" type="text/css" href="css/imageviewer.css">
+	<!-- Slick CSS CDN -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick-theme.css"/>
 
 	<!-- Font awesome for social media icons -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
@@ -76,15 +76,15 @@
 			<iframe width="640" height="360" src="https://www.youtube.com/embed/q45eAm3zQeE" frameborder="0" allowfullscreen></iframe>
 		</div>
 
-		<div class="images cf">
-			<img src="img/1476470132-.png" data-high-res-src="img/1476470132.png" alt="" class="gallery-items">
-			<img src="img/1476470144-.png" data-high-res-src="img/1476470144.png" alt="" class="gallery-items">
-			<img src="img/1476470212-.png" data-high-res-src="img/1476470212.png" alt="" class="gallery-items">
-			<img src="img/1476470391-.png" data-high-res-src="img/1476470391.png" alt="" class="gallery-items">
-			<img src="img/1476470459-.png" data-high-res-src="img/1476470459.png" alt="" class="gallery-items">
-			<img src="img/1476470555-.png" data-high-res-src="img/1476470555.png" alt="" class="gallery-items">
-			<img src="img/1476470588-.png" data-high-res-src="img/1476470588.png" alt="" class="gallery-items">
-			<img src="img/1476470654-.png" data-high-res-src="img/1476470654.png" alt="" class="gallery-items">
+		<div class="image-scroller">
+			<div><img src="img/1476470132-.png"></div>
+			<div><img src="img/1476470144-.png"></div>
+			<div><img src="img/1476470212-.png"></div>
+			<div><img src="img/1476470391-.png"></div>
+			<div><img src="img/1476470459-.png"></div>
+			<div><img src="img/1476470555-.png"></div>
+			<div><img src="img/1476470588-.png"></div>
+			<div><img src="img/1476470654-.png"></div>
 		</div>
 
 		<p>
@@ -254,22 +254,10 @@
 		</div>
 	</div>
 
+	<!-- Slick JS CDN -->
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 	<script type="text/javascript" src="js/pageScript.js"></script>
-	<script type="text/javascript" src="js/imageviewer.js"></script> 
-
-	<!-- For the image full screen -->
-	<script type="text/javascript">
-		$(function () {
-    var viewer = ImageViewer();
-	    $('.gallery-items').click(function () {
-	        var imgSrc = this.src,
-	            highResolutionImage = $(this).data('high-res-src');
-	 
-	        viewer.show(imgSrc, highResolutionImage);
-	    });
-		});
-	</script>
-
+	
 </body>
 
 </html>
