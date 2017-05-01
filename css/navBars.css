@@ -6,20 +6,20 @@
     position: fixed;
     display: table;
     overflow-x: hidden;
-    z-index: -1;
-}
-
-.sidenav a {
-    width: auto;
-    display: block;
-    padding: 5px 5px 5px 5px;
-    font-size: 25px;
-    text-decoration: none;
+    z-index: 0;
 }
 
 .alignNav {
     display: table-cell;
     vertical-align: middle;
+}
+
+.alignNav a {
+    width: auto;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    font-size: 25px;
+    text-decoration: none;
 }
 
 /*
