@@ -70,15 +70,25 @@ window.onclick = function(event) {
 
 /* Slick carousel
 */
+$(document).ready(function() {
+    $('.image-display').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: '.image-scroller'
+    });
+});
 
 $(document).ready(function(){
   $('.image-scroller').slick({
     autoplay: true,
     arrows: false,
     dots: false,
-    dotsClass: 'slick-dots',
     slidesToShow: 3,
     centerMode: true,
-    adaptiveHeight: true
+    focusOnSelect: true,
+    adaptiveHeight: true,
+    asNavFor: '.image-display'
   });
 });
