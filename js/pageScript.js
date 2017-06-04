@@ -92,3 +92,15 @@ $(document).ready(function(){
     asNavFor: '.image-display'
   });
 });
+
+/* Image Viewer Full Screen
+*/
+$(function () {
+  var viewer = ImageViewer();
+  $('.gallery-items').click(function () {
+      var imgSrc = this.src,
+          highResolutionImage = $(this).data('high-res-src');
+
+      viewer.show(imgSrc, highResolutionImage);
+  });
+});
