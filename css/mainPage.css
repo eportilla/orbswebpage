@@ -176,6 +176,10 @@ video {
     cursor: pointer;
 }
 
+.image-scroller div:focus {
+    outline: none;
+}
+
 .image-display {
     padding: 10px;
 }
