@@ -176,7 +176,7 @@ video {
     cursor: pointer;
 }
 
-.image-scroller div:focus {
+.image-scroller div:focus, .image-display div:focus {
     outline: none;
 }
 
