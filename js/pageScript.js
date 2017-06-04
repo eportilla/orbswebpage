@@ -95,12 +95,12 @@ $(document).ready(function(){
 
 /* Image Viewer Full Screen
 */
-$(function () {
-  var viewer = ImageViewer();
+$(document).ready(function() {
   $('.gallery-items').click(function () {
-      var imgSrc = this.src,
-          highResolutionImage = $(this).data('high-res-src');
+    var viewer = ImageViewer();
+    var imgSrc = this.src,
+        highResolutionImage = $(this).data('high-res-src');
 
-      viewer.show(imgSrc, highResolutionImage);
+    viewer.show(imgSrc, highResolutionImage);
   });
 });
