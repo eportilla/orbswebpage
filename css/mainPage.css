@@ -172,7 +172,7 @@ video {
     border: 1px solid gold;
 }
 
-.image-scroller img:hover {
+.image-scroller img:hover, .image-display img:hover {
     cursor: pointer;
 }
 
