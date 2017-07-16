@@ -212,9 +212,36 @@ video {
     box-shadow: inset 0 0 10px 5px #888;
 }
 
-.modal-body a {
+.modal-icons {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.modal-icons a {
     color: #aaaaaa;
     margin: 5%;
+    padding: 5px;
+    position: relative;
+    text-align: center;
+}
+
+.modal-links a {
+    color: yellow;
+    width: auto;
+    display: block;
+    text-align: center;
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke: 0.5px yellow;
+    text-decoration: none;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.modal-steam-widget {
+    text-align: center;
+    padding: 5px;
+    
 }
 
 .close-modal a {
