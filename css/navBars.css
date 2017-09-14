@@ -94,6 +94,10 @@
     background: #7289DA;
 }
 
+.sidenav-right .fa-reddit {
+    background: #205D7A;
+}
+
 .sidenav-right .fa-twitter {
     background: #00aced;
 }
@@ -136,6 +140,12 @@
     color: #7289DA;
     -webkit-text-fill-color: white;
     -webkit-text-stroke: 2px #7289DA;
+}
+
+#reddit span {
+    color: #205D7A;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke: 2px #205D7A;
 }
 
 #twitter span {
